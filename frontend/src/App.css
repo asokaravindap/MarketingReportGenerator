@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.preview-brochure {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+.preview-brochure h1, .preview-brochure h2, .preview-brochure h3 {
+  color: #1976d2;
+  margin-bottom: 1rem;
+}
+
+.preview-brochure ul {
+  padding-left: 1.5rem;
+}
+
+.preview-brochure ul li {
+  margin-bottom: 0.5rem;
+}
+
+.dropzone-container {
+  transition: all 0.3s ease;
+}
+
+.dropzone-container:hover {
+  background-color: #f5f5f5;
+}
+
+.image-preview {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.image-preview img {
+  transition: transform 0.3s ease;
+}
+
+.image-preview:hover img {
+  transform: scale(1.05);
+}
+
+.generate-button {
+  background: linear-gradient(45deg, #1976d2, #42a5f5);
+  transition: all 0.3s ease;
+}
+
+.generate-button:hover {
+  background: linear-gradient(45deg, #1565c0, #1976d2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(25, 118, 210, 0.3);
+}
