@@ -374,16 +374,29 @@ const BrochureGenerator: React.FC = () => {
                       <Grid container spacing={1}>
                         {images.slice(0, 3).map((image, index) => (
                           <Grid item xs={images.length === 1 ? 12 : 4} key={index}>
-                            <img
-                              src={image.preview}
-                              alt={image.name}
-                              style={{
+                            <Box
+                              sx={{
                                 width: '100%',
-                                height: images.length === 1 ? '250px' : '150px',
-                                objectFit: 'cover',
+                                display: 'flex',
+                                justifyContent: 'center',
+                                alignItems: 'center',
                                 borderRadius: '8px',
+                                overflow: 'hidden',
+                                backgroundColor: '#f5f5f5',
+                                minHeight: images.length === 1 ? '200px' : '120px',
                               }}
-                            />
+                            >
+                              <img
+                                src={image.preview}
+                                alt={image.name}
+                                style={{
+                                  maxWidth: '100%',
+                                  maxHeight: images.length === 1 ? '300px' : '180px',
+                                  objectFit: 'contain',
+                                  borderRadius: '8px',
+                                }}
+                              />
+                            </Box>
                           </Grid>
                         ))}
                       </Grid>
